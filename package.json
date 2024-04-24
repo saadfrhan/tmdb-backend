@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon src/app.ts"
+    "start": "nodemon api/index.ts"
   },
   "dependencies": {
     "@clerk/clerk-sdk-node": "^5.0.0",

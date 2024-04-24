@@ -8,7 +8,10 @@ dotenv.config();
 
 const app = express();
 const corsOptions = {
-  origin: "https://tmdb-frontend-chi.vercel.app",
+  origin:
+    process.env.NODE_ENV === "production"
+      ? "https://tmdb-frontend-chi.vercel.app"
+      : "http://localhost:5173",
 };
 
 app.use(cors(corsOptions));
