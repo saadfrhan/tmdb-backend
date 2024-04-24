@@ -2,12 +2,15 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import preferenceRoutes from "./routes/preferences";
+import connectDB from "./helper/connect-db";
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+connectDB();
 
 app.listen(3000, () => {
   console.log("Listening on port 3000!");
