@@ -15,7 +15,7 @@ cd server
 pnpm install
 ```
 
-```
+```bash
 # .env file frontend
 VITE_TMDB_READ_ACCESS_TOKEN=""
 VITE_CLERK_PUBLISHABLE_KEY=""
